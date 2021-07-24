@@ -5,23 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
-
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
     <div class="container border border-warning">
         <div class="row">
             <div class="col-md-5 mx-auto">
-                <div id="second">
+                <div>
                     <div class="myform form ">
                         <div class="logo mb-3">
                             <div class="col-md-12 text-center">
@@ -29,29 +21,41 @@
                             </div>
                         </div>
                         <form action="#" name="registration">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">First Name</label>
-                                <input type="text" name="firstname" class="form-control" id="firstname"
-                                    aria-describedby="emailHelp" placeholder="Enter Firstname">
+                            <div class="form-group mb-3">
+                                <label for="first-name">First Name</label>
+                                <input type="text" name="first-name" class="form-control" id="firstname"
+                                    aria-describedby="emailHelp" placeholder="Enter First-name">
                             </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Last Name</label>
-                                <input type="text" name="lastname" class="form-control" id="lastname"
-                                    aria-describedby="emailHelp" placeholder="Enter Lastname">
+                            <div class="form-group mb-3">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" name="last-name" class="form-control" id="lastname"
+                                    aria-describedby="emailHelp" placeholder="Enter Last-name">
                             </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
+                            <div class="form-group mb-3">
+                                <label for="email">Email address</label>
                                 <input type="email" name="email" class="form-control" id="email"
                                     aria-describedby="emailHelp" placeholder="Enter email">
                             </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Password</label>
+                            <div class="form-group mb-3">
+                                <label for="Username">Username</label>
+                                <input type="username" name="username" class="form-control" id="username"
+                                    aria-describedby="usernamelHelp" placeholder="Enter Username">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="password">Password</label>
                                 <input type="password" name="password" id="password" class="form-control"
                                     aria-describedby="emailHelp" placeholder="Enter Password">
                             </div>
-                            <div class="col-md-12 text-center mb-3">
-                                <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Get Started For
-                                    Free</button>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="doctor">
+                                <label class="form-check-label" for="doctor">Doctor</label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="patient">
+                                <label class="form-check-label" for="patient">Patient</label>
+                            </div>
+                            <div class="col-md-12 text-center mb-3 mt-3">
+                                <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Sign up</button>
                             </div>
                             <div class="col-md-12 ">
                                 <div class="form-group">
@@ -65,6 +69,8 @@
             </div>
         </div>
     </div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
