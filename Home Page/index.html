@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    <section class="container bg-info">
+    <section class="bg-info">
         <!-- Start Navbar -->
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
-                <div class="container-fluid">
+                <div class="container">
                     <a href="index.html">
                         <img width="140" height="50" src="Image/Transperent.png">
                     </a>
@@ -43,7 +43,18 @@
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success me-5" type="submit">Search</button>
-                            <a class="btn btn-outline-primary" href="../Login/sign-in.html">Login</a>
+
+                            <div class="dropdown">
+                                <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Log-In
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="../Login/sign-in.html">Doctor</a></li>
+                                    <li><a class="dropdown-item" href="../Login/sign-in.html">Patient</a></li>
+                                </ul>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -52,8 +63,8 @@
         <!-- End Navbar -->
 
         <!--Main Section Start-->
-        <main>
-            <section class="container row d-flex m-5">
+        <main class="container">
+            <section class="row d-flex m-5">
                 <div class="col-lg-6 col-md-12 col-12">
                     <h2> We Are Here For Your Care</h2>
                     <h1> We The Best Doctors</h1>
